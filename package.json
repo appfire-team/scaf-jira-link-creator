@@ -1,0 +1,12 @@
+{
+  "name": "scaf-jira-link-creator",
+  "version": "1.0.0",
+  "description": "Scripts to create Jira links for Scaffolding pages with missing links",
+  "main": "index.js",
+  "author": "ServiceRocket",
+  "license": "ISC",
+  "dependencies": {
+    "fast-csv": "^4.3.6",
+    "yargs": "^16.2.0"
+  }
+}

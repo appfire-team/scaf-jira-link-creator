@@ -6,6 +6,7 @@
   "author": "ServiceRocket",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "fast-csv": "^4.3.6",
     "yargs": "^16.2.0"
   }

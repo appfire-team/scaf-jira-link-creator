@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Scripts to create Jira links for Scaffolding pages with missing links",
   "main": "index.js",
+  "type": "module",
   "author": "ServiceRocket",
   "license": "ISC",
   "dependencies": {

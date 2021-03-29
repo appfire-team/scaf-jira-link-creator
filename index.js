@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import fs from 'fs';
-import path from 'path';
 import axios from 'axios';
 import csv from 'fast-csv';
 import yargs from 'yargs';
@@ -9,7 +8,6 @@ import {hideBin} from 'yargs/helpers';
 import Logger from './logger.js';
 
 const {log, logSummary, LOG_LEVELS: {INFO, ERROR}} = Logger;
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 const argv = yargs(hideBin(process.argv))
   .option("jira-url", {
@@ -107,7 +105,7 @@ const processRow = row => {
   });
 };
 
-fs.createReadStream(path.resolve(__dirname, csvFilename))
+fs.createReadStream(csvFilename)
   .pipe(csv.parse({headers: true}))
   .on("error", console.error)
   .on("data", processRow)
